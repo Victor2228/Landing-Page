@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-5/9n1N+3P3Ri8d5Nq0o+CXvZ3FRYqYTZsbPfhSdV2qJtZbB3eFPk8a3ftn3w47a3Ko5tVKPf6RfyIn3N8DX8eg=="
+        crossorigin="anonymous" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: linear-gradient(to bottom, #85d8ce, #00c3ff); /* Gradient from light blue to ocean blue */
+
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #25274D;
+            color: #fff;
+            padding: 1.5rem 0;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        section {
+            padding: 100px;
+            margin: 100px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        #hero {
+            background-color: #3498db;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #2c3e50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button i {
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        a:hover {
+            color: #fff;
+        }
+
+        .cta-button:hover {
+            background-color: #1c2b38;
+        }
+
+        #features {
+            background-color: #ecf0f1;
+        }
+
+        #about {
+            background-color: #fff;
+        }
+
+        #services {
+            background-color: #ecf0f1;
+        }
+
+        #testimonials {
+            background-color: #3498db;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        #contact {
+            background-color: #2c3e50;
+            color: #fff;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        form label {
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        form input,
+        form textarea {
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        form button {
+            padding: 12px 24px;
+            background-color: #3498db;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        form button:hover {
+            background-color: #1f6697;
+        }
+
+        footer {
+            background-color: #25274D;
+            color: #fff;
+            text-align: center;
+            padding: 0.05rem 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        .feature-icon {
+            font-size: 36px;
+            margin-bottom: 10px;
+            color: #3498db;
+        }
+
+        .feature {
+            margin-bottom: 30px;
+        }
+
+        /* Additional Styling for Images */
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            .container {
+                width: 90%;
+            }
+
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin-bottom: 10px;
+            }
+
+            section {
+                padding: 2rem 0;
+            }
+
+            form {
+                width: 100%;
+            }
+        }
+    </style>
+    <title>SpectraTech - Innovate Tomorrow</title>
+</head>
+
+<body>
+    <header>
+        <h1>SpectraTech</h1>
+        <nav>
+            <ul>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Welcome to SpectraTech</h2>
+        <p>Empowering Tomorrow's Innovations with Cutting-edge Technology.</p>
+        <a href="#contact" class="cta-button"><i class="fas fa-arrow-right"></i> Get Started</a>
+    </section>
+
+    <section id="features">
+        <h2>Key Features</h2>
+        <div class="container">
+            <div class="feature">
+                <i class="fas fa-cogs feature-icon"></i>
+                <h3>Quantum Integration</h3>
+                <p>Seamlessly connect devices in a quantum computing environment.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-robot feature-icon"></i>
+                <h3>AI-driven Automation</h3>
+                <p>Harness the power of artificial intelligence for enhanced automation.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-vr-cardboard feature-icon"></i>
+                <h3>Augmented Reality Experiences</h3>
+                <p>Transform reality through immersive AR applications.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About SpectraTech</h2>
+        <div class="container">
+            <p>SpectraTech is a pioneering technology company dedicated to pushing the boundaries of innovation. Our mission is to create solutions that empower individuals and businesses to thrive in the digital era. With a fervor for cutting-edge technologies, we are committed to delivering excellence and shaping the future.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="container">
+            <div class="service">
+                <h3>Consulting Excellence</h3>
+                <p>Our expert consultants provide tailored solutions to optimize your technology strategy and implementation.</p>
+            </div>
+            <div class="service">
+                <h3>Advanced AI Solutions</h3>
+                <p>Unlock the full potential of artificial intelligence with our state-of-the-art solutions for automation and insights.</p>
+            </div>
+            <div class="service">
+                <h3>Immersive AR Applications</h3>
+                <p>Experience the future with our augmented reality applications, transforming the way you interact with the digital world.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials">
+        <h2>What Our Clients Say</h2>
+        <div class="container">
+            <div class="testimonial">
+                <p>"SpectraTech has exceeded our expectations with their innovative solutions. Their commitment to excellence is truly commendable."</p>
+                <p class="author">- Jane Smith, CTO ABC Tech</p>
+            </div>
+            <div class="testimonial">
+                <p>"Working with SpectraTech has been a game-changer for our business. Their expertise and professionalism set them apart."</p>
+                <p class="author">- Mark Johnson, Founder XYZ Innovations</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact SpectraTech</h2>
+        <div class="container">
+            <p>Connect with us for inquiries, collaboration opportunities, or to explore the endless possibilities of technology.</p>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="How can we assist you?" required></textarea>
+
+                <button type="submit" class="cta-button"><i class="fas fa-paper-plane"></i> Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 SpectraTech. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
